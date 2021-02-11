@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* --------------This is background css---------------------- */
+.home{
+    background-image: url('images/1.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+
+}
+.home nav a:hover{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+}
+nav a{
+    color: #F1C40F;
+    text-transform: capitalize;
+    font-size: 20px;
+    /* position: fixed; */
+}
+nav{
+    text-align: center;
+    padding-top: 2%;
+}
+.logo{
+    display: inline-block;
+    font-size: 25px;
+    color: #FF4000;
+    font-weight: bold;
+}
+nav a{
+    margin: 0 25px;
+    color:;
+}
+.banner_area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+.banner_area h2 span{
+    color:darkorange;
+}
+.banner_area h3{
+    font-size: 30px;
+    margin: 0 0 40px 0;
+    color:#fff;
+}
+.banner_area h2{
+    font-size: 3rem;
+    color: #fff;
+    line-height: 0;
+
+}
+@media (max-width:768px){
+    body
+    {
+        overflow-x: hidden;
+    }
+    nav a{
+        font-size: 11px;
+        margin: 0 10px;
+    }
+    .logo{
+        color:
+        font-size: 18px;
+    }
+    .banner_area h2{
+        font-size: 1.7rem;
+    }
+    .banner_area h3{
+        margin: 0 0 20px 0;
+    }
+}
+.about{
+    font-family: 'Russo One', sans-serif;
+}
+
+.learn{
+    padding-top: 20px;
+    margin-left: 30%;
+}
+.learn::hover{
+    background-color: #C21A17;
+}
+.team_area{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+.single_team{
+    width: 360px;
+    height: 400px;
+    padding: 24px;
+    background-color: #fff;
+    position: relative;
+    align-items: flex-end;
+    transition: 0.6s ease-out;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    }
+    .single_team:hover{
+        transform: translate(15px);
+    }
+    .single_team:hover:before{
+        opacity: 1;
+    }
+    .single_team:hover .team_text{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .single_team:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        background-color: linear-gradient(to top 100%,from transparant);
+        z-index: 2;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .single_team img{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+
+    }
+    .single_team .team_text{
+        position: relative;
+        z-index: 3;
+        color: #000;
+        opacity: 0;
+        transform: translateY(60px);
+        transition: 0.5s;
+    }
+    .team_text h2{
+        margin: 0;
+        font-family: font-family: 'Barlow', sans-serif;
+    }
+    .team_text p{
+        margin-top: 8px;
+
+    }
+    .single_team img{
+        width: 100%;
+        height: 80vh;
+    }
+
+    /* ----------------End of Header page------------------ */
+
+    .dk{
+        width: 100%;
+        height: 100%;
+    }
+    .hello{
+        color:blue;
+    }
+    
+    .dk{
+        transition:1.5s;
+    }
+    .dk:hover{
+      /* transform:rotate(30deg); */
+      transform:translateY(-10%);
+      transition:1.5s;
+    }
+    .name{
+        border:2px solid #fff;
+        border-radius:50px;
+        transition:1.5s;
+    }
+    .name:hover{
+        transform:rotate(30deg);
+        transition:1.5s;
+    }
+    .service{
+        color: #C0392B;
+    }
+.dipak{
+    border:none;
+}
+.webdeveloper{
+    font-family: 'Potta One', cursive;
+}
+.sec1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8fafb;
+}
+.sec1 h2{
+    font-weight: bold;
+}
+.sec1 p{
+    font-family: 'Sofia', cursive;
+}
+.d:hover{
+    background-color:green;
+}
+.massege::hover{
+    background-color:green;
+}
+/* ------------------Map section styles--------- */
+.MapSection{
+    background-image:url('1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100%;
+}
+@media(max-width:678px;)
+{
+    body{
+        overflow-x: hiddensssssss;
+    }
+    .MapSection{
+        width:300px;
+    }
+}
+
+/* ---------------------Map section end--------- */
+
+.about-images
+{
+    width:100%;
+    height:50%;
+}
+
+
+/* -------------------------About Section Start---------------- */
+
+.coding
+{
+    padding-top: 25%;
+}
+
+/* ----------------------------About sectiion end------------------ */
+
+/* --------------------------------progress Bar start------------------------------- */
+skill {
+    width: 500px;
+    margin: 60px auto;
+    color: white;
+}
+
+.skill li {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.bar {
+    background-color: #353b48;
+    /* display: block; */
+    height: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+    height: 2px;
+    float: left;
+    background: #2187e7;
+}
+.html{
+    width: 90%;
+    animation:html 2s;
+}
+.css{
+    width: 80%;
+    animation:css 2s;
+}
+.js{
+    width: 30%;
+    animation:js 2s;
+}
+.boostrap{
+    width: 50%;
+    animation:boos 2s;
+}
+.word{
+    width: 40%;
+    animation: word 2s;
+}
+@keyframes word{
+    0%{width: 0;}
+    100%{width: 40%;}
+}
+@keyframes html{
+    0%{width: 0;}
+    100%{width: 90%;}
+}
+@keyframes css{
+    0%{width: 0;}
+    100%{width: 80%;}
+}
+@keyframes js{
+    0%{width: 0;}
+    100%{width: 30%;}
+}
+@keyframes boos{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+/* ---------------------------------progress Bar end------------------------------- */
+
+

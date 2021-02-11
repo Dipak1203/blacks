@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        .skill {
+            width: 500px;
+            margin: 60px auto;
+            color: white;
+        }
+
+        .skill li {
+            margin: 20px 0;
+        }
+
+        .bar {
+            background-color: #353b48;
+            /* display: block; */
+            height: 2px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: 0 0 10px #2187e7b3;
+        }
+
+        .bar span {
+            height: 2px;
+            float: left;
+            background: #2187e7;
+        }
+        .html{
+            width: 90%;
+            animation:html 2s;
+        }
+        .css{
+            width: 80%;
+            animation:css 2s;
+        }
+        .js{
+            width: 30%;
+            animation:js 2s;
+        }
+        .boostrap{
+            width: 50%;
+            animation:boos 2s;
+        }
+        .word{
+            width: 40%;
+            animation: word 2s;
+        }
+        @keyframes word{
+            0%{width: 0;}
+            100%{width: 40%;}
+        }
+        @keyframes html{
+            0%{width: 0;}
+            100%{width: 90%;}
+        }
+        @keyframes css{
+            0%{width: 0;}
+            100%{width: 80%;}
+        }
+        @keyframes js{
+            0%{width: 0;}
+            100%{width: 30%;}
+        }
+        @keyframes boos{
+            0%{width: 0;}
+            100%{width: 50%;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="skill fluid">
+        <h2>My Skill</h2>
+        <li>
+            <h4>HTML5</h4><span class="bar"><span class="html"></span></span>
+        </li>
+
+        <li style="list-style: none;">
+            <h4>CSS3</h4><span class="bar"><span class="css"></span></span>
+        </li>
+        <li>
+            <h4>Bootstrap5</h4><span class="bar"><span class="boostrap"></span></span>
+        </li>
+        <li>
+            <h4>JavaScript</h4><span class="bar"><span class="js"></span></span>
+        </li>
+        <li>
+            <h4>Wordpress</h4><span class="bar">
+                <span class="word">
+            </span></span>
+        </li>
+    </div>
+</body>
+
+</html>
